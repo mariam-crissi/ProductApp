@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Product Info</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title>PRODUCT AND PRICE APP</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/styles.css" rel="stylesheet">
+    <link href="bootstrap/css/docs.css" rel="stylesheet">
+     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<div class="navbar navbar-fixed-top" xmlns="http://www.w3.org/1999/html">
+    <div class="navbar-inner">
+        <div class="container">
+
+
+
+            <div class="nav-collapse">
+
+
+                <ul class="nav pull-right">
+                    <li class="add-menu"><a href="#addItem"><i class="icon-edit icon-white"></i> Add Product</a></li>
+                    <li class="add-menu"><a href="#updateItem"><i class="icon-edit icon-white"></i>Product Info</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#addItem" target="_blank">Add Product</a></li>
+                            <li><a href="#updateItem" target="_blank">Product Info</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50"  ng-app="myApp">
+
+<div class="header"></div>
+
+<div class="container">
+
+    <div class="row">
+ <div id="content" class="span12>">
+<div ng-view></div>
+</div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <p class="pull-right"><a href="#">Back Home</a></p>
+
+
+    </footer>
+
+</div>
+
+<script src="bootstrap/lib/jquery-1.7.2.min.js"></script>
+
+<script src="bootstrap/lib/bootstrap.js"></script>
+
+
+
+
+
+
+    <script type="text/javascript" src="libs/angular/angular.min.js"></script>
+    <script type="text/javascript" src="libs/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="libs/angularUtils-pagination/dirPagination.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers.js"></script>
+    <script type="text/javascript" src="app/services.js"></script>
+
+
+
+
+</body>
+</html>

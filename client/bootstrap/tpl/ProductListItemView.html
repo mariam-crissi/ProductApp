@@ -1,0 +1,40 @@
+
+
+<div ng-controller="itemCtrl" class="container">
+                       <div class="page-header">
+                                  <h1>Product List <small>Select from it!</small></h1>
+                       </div>
+
+
+
+
+
+<ul class="thumbnails">
+
+<li class="span3" dir-paginate="item in items | itemsPerPage:8">
+
+<a href="#/editItem/{{item.productid}}"  class="thumbnail plain" ng-click="ok(item.productid,item.name,item.price,item.url)">
+    <img src="{{item.url}}" height="150" width="125" alt="">
+    <h5>{{item.name}}</h5>
+    <p>{{item.price| currency}}</p>    
+    
+    
+    
+</a> 
+ <button type="button" class="btn btn-danger pull-right" ng-click="deleteItem(item)">
+    <i class="fa fa-trash-o"></i>
+</li>
+                                                    
+                                                  
+   </ul>               
+<div class="text-center">
+<div class="pagination pagination centered">
+               <dir-pagination-controls
+       max-size="5"
+       direction-links="true"
+       boundary-links="true" >
+          </dir-pagination-controls>  
+</div> 
+</div>
+
+</div>

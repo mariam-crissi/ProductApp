@@ -1,0 +1,109 @@
+<div ng-controller="itemCtrl" class="container">
+<div class="row">
+
+    <form class="form-horizontal span12" name="myForm">
+
+
+        <fieldset>
+
+            <legend>Product Details</legend>
+            <br/>
+
+            <div class="row">
+                <div class="span9">
+
+                    <div class="control-group">
+                        <label for="productid" class="control-label">Product Id:</label>
+
+                        <div class="controls">
+                            <input type="text" id="productid" name="productid" ng-model="newItem.productid"/>
+                            
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="name" class="control-label">Name:</label>
+
+                        <div class="controls">
+                            <input type="text" id="name" name="name" ng-model="newItem.name"/>
+                            
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="price" class="control-label">Price:</label>
+
+                        <div class="controls">
+                            <input type="text" id="price" name="price"  ng-model="newItem.price"/>
+                            
+                        </div>
+                    </div>
+
+                     <div class="control-group">
+                        <label for="grapes" class="control-label">Grapes:</label>
+
+                        <div class="controls">
+                            <input type="text" id="grapes" name="grapes"  ng-model="newItem.grapes"/>
+                            
+                        </div>
+                    </div>
+                     <div class="control-group">
+                        <label for="country" class="control-label">Country:</label>
+
+                        <div class="controls">
+                            <input type="text" id="country" name="country"  ng-model="newItem.country"/>
+                            
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="region" class="control-label">Region:</label>
+
+                        <div class="controls">
+                            <input type="text" id="region" name="region"  ng-model="newItem.region"/>
+                            
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="notes" class="control-label">Notes:</label>
+
+                        <div class="controls">
+                            <textarea type="text" id="notes" name="notes"  ng-model="newItem.notes"></textarea>
+                            
+                        </div>
+                    </div>
+                   <div class="control-group">
+                        <label for="url" class="control-label">url:</label>
+
+                        <div class="controls">
+                            <input type="text" id="url" name="url" ng-model="newItem.url"/>
+                            
+                        </div>
+                    </div>
+
+             </div>
+
+            </div>
+
+        </fieldset>
+
+        <div class="form-actions">
+               <div class="span4 offset2">
+              <button type="submit" class="btn btn-primary save center" ng-click="addItem(newItem.productid,newItem.name, newItem.price,newItem.grapes,newItem.country,newItem.region,newItem.notes,newItem.url) ; ShowHide()">Save</button>
+             </div>
+        </div>
+
+                        
+    </form>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
